@@ -1,0 +1,9 @@
+ipykernel 
+python-dotenv 
+
+langchain 
+langchain_community
+langchain_unstructured
+
+unstructured[all-docs]
+pdfminer
