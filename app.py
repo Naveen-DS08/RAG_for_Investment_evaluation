@@ -37,7 +37,7 @@ with st.sidebar:
     # st.title("Menu")
     st.header("Configuration")
     groq_api_key = st.text_input("Enter your Groq API Key:", type="password", placeholder="API Key here")
-    hf_token = st.text_input("Enter your HuggingFace Token", type="password", placeholder="HuggingFace Token")
+    # hf_token = st.text_input("Enter your HuggingFace Token", type="password", placeholder="HuggingFace Token")
     uploaded_file = st.file_uploader("Upload Pitch Deck (PDF)", type="pdf", )
 
     # Store API key in session state for later use
