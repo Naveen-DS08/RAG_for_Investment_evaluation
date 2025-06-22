@@ -17,8 +17,6 @@ load_dotenv()
 
 os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
 
-
-
 ## set up Streamlit 
 st.title("Conversational RAG With PDF uplaods and chat history")
 st.write("Upload Pdf's and chat with their content")
