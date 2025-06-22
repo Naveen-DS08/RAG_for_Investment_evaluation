@@ -56,17 +56,16 @@ When a user submits a query:
 * **Response to User:** The LLM's generated answer is displayed to the user, and the relevant source documents (chunks) are optionally shown for transparency.
 
     ```mermaid
-    graph TD
-        A[User Query] --> B[Chat History]
-        A & B --> C[History-Aware Retriever Prompt (LLM)]
-        C --> D[Optimized Search Query]
-        D --> E[Chroma: Similarity Search (Retrieval)]
-        E --> F[Relevant Context Chunks]
-        F & A & B --> G[QA Prompt (Main LLM - Groq)]
-        G --> H[Generated Answer]
-        H --> I[Display to User]
-        I --> J[Update Chat History]
-    ```
+  graph TD
+    A[User Query] --> B[Chat History]
+    A & B --> C[History-Aware Retriever - Prompt LLM]
+    C --> D[Optimized Search Query]
+    D --> E[Chroma: Similarity Search - Retrieval]
+    E --> F[Relevant Context Chunks]
+    F & A & B --> G[QA Prompt : Main LLM - Groq]
+    G --> H[Generated Answer]
+    H --> I[Display to User]
+    I --> J[Update Chat History]
 
 ### **Investor Information Extraction Workflow**
 
